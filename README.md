@@ -6,3 +6,5 @@ Currently, JOGL(Java OpenGL) has issues with macOS and NSWindows stuff that shou
 Windows should work just fine.
 
 If anything does not work as intended, please install processing (processing.org) and run the .pde source code there.
+
+You will need to install java for any binaries to work, unless specified otherwise.
