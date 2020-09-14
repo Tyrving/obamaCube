@@ -1,7 +1,3 @@
-//Written by Mark Lyons, mlyons23@sidwell.edu
-//Only authorized use of this code is permitted, with permission from Mark Lyons, and only me. 
-//I will sue you, legit, for stealing this. Anyone can settle a lawsuit for $100, provided they also surrender the code.
-
 PImage tex;
 PImage img1;
 PImage img2;
