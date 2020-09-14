@@ -1,7 +1,9 @@
 //Written by Mark Lyons, mlyons23@sidwell.edu
 //Only authorized use of this code is permitted, with permission from Mark Lyons, and only me. 
 //I will sue you, legit, for stealing this. Anyone can settle a lawsuit for $100, provided they also surrender the code.
-
+float moveRate = 3.5;
+float rotZRate = 0.06;
+float mouseRotRate = 0.007;
 PImage tex;
 PImage img1;
 PImage img2;
@@ -9,9 +11,9 @@ PImage img3;
 float rotx = 0;
 float roty = 0;
 float rotz = 0;
-int zTrans = 0;
-int xTrans;
-int yTrans;
+float zTrans = 0;
+float xTrans;
+float yTrans;
 boolean w =false;
 boolean a =false;
 boolean s = false;
@@ -84,9 +86,8 @@ void TexturedCube(PImage tex) {
   endShape();
 }
 void mouseDragged() {
-  float rate = 0.01;
-  rotx += (pmouseY-mouseY) * rate;
-  roty += (mouseX-pmouseX) * rate;
+  rotx += (pmouseY-mouseY) * mouseRotRate;
+  roty += (mouseX-pmouseX) * mouseRotRate;
 }
 void move(){
   if(a) left();
@@ -125,11 +126,11 @@ void keyReleased(){
     case('e'): e = false; break;
   }
 }
-void up() {yTrans = yTrans+2;}
-void down(){yTrans = yTrans-2;}
-void left(){xTrans = xTrans+2;}
-void right(){xTrans = xTrans-2;}
-void in(){zTrans = zTrans+2;}
-void out(){zTrans = zTrans-2;}
-void rotLeft(){rotz=rotz-0.06;}
-void rotRight(){rotz=rotz+0.06;}
+void up() {yTrans = yTrans+moveRate;}
+void down(){yTrans = yTrans-moveRate;}
+void left(){xTrans = xTrans+moveRate;}
+void right(){xTrans = xTrans-moveRate;}
+void in(){zTrans = zTrans+moveRate;}
+void out(){zTrans = zTrans-moveRate;}
+void rotLeft(){rotz=rotz-rotZRate;}
+void rotRight(){rotz=rotz+rotZRate;}
