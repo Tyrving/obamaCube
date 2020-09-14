@@ -1,9 +1,7 @@
 # obamaCube
 Repo for the Obama Cube Simulator. Written in Processing for Java.
 
-Currently, JOGL(Java OpenGL) has issues with macOS and NSWindows stuff that should be fixed in 2.4, which has not been released yet. Because of this, I cannot export proper OSX .app files. 
-
-Windows .exe should work just fine. You will need to install java.
+Currently, JOGL(Java OpenGL) has issues with macOS and NSWindows stuff that should be fixed in 2.4, which has not been released yet. Because of this, I cannot export proper OSX .app files. EXE coming soon.
 
 If anything does not work as intended, please install processing (processing.org) and run the .pde source code there. You will need to have img1, 2 and 3 in the same folder as the .pde file.
 
